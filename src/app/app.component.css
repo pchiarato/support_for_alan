@@ -1,20 +1,30 @@
+.clip {
+  display: flex;
+  justify-content: center;
+}
+.img-container img {
+  width: 100%;
+}
+.thumbnail-container {
+  padding-top: 15px;
+}
 .donate-button {
   text-align: center;
 }
-.roda-img {
-  height: 200px;
-  overflow: hidden;
+.roda-img, .bike-img {
+ width: 300px;
+ padding: 6px;
 }
 .group-img {
   width: 180px;
   height: 120px;
-  padding: 10px;
+  padding: 8px 4px;
   /* width: 120px;
   height: 120px; */
 }
 .register-container {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
 }
 .title {
   font-weight: 700;
@@ -23,4 +33,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 414px) {
+  .slider-container {
+    flex-direction: column;
+  }
+  .register-container {
+    flex-direction: column;
+  }
+  #bikes-img {
+    width: 300px;
+    height: 200px;
+    padding: 4px;
+  }
+  .group-img {
+    width: 300px;
+    height: 170px;
+    padding: 4px;
+  }
 }
